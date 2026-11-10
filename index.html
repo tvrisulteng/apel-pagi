@@ -84,7 +84,7 @@
 
     <div class="header">
       <div class="header-info">
-        <h2>PRESENSI & IZIN</h2>
+        <h2>PRESENSI APEL PAGI</h2>
         <p>LPP TVRI Sulteng</p>
       </div>
       <div class="clock-display" id="clock">00:00:00</div>
@@ -151,7 +151,7 @@
     // ==========================================
     // KUNCI API RAHASIA (GANTI DENGAN WEB APP URL ANDA)
     // ==========================================
-    const API_URL = 'https://script.google.com/macros/s/AKfycbzPZEMnq334OWYC9D67KnuGGWwEg2QkIA2EhVgg0Pn3ym-34DmcOXzjscF0beKMcR62/exec';
+    const API_URL = 'https://script.google.com/macros/s/AKfycbxJ-6k2JQ8t8WvxseIW32VM-3J42BpezQimyDmwCAeVsPlcjnoFUrjmVTleBFfhmgMM/exec';
 
     // REGISTRASI SERVICE WORKER UNTUK PWA
     if ('serviceWorker' in navigator) {
@@ -164,7 +164,7 @@
 
     if (/WhatsApp/i.test(navigator.userAgent)) document.getElementById('waBanner').style.display = 'block';
 
-    const KANTOR_LAT = -0.8973, KANTOR_LNG = 119.8735, RADIUS_MAX = 50; 
+    const KANTOR_LAT = -0.8973, KANTOR_LNG = 119.8735, RADIUS_MAX = 1500; 
     let lat = null, lng = null, dataPegawaiServer = [], fotoBase64Akhir = null;
     let waktuClient = "", jarakPegawai = 9999;
     
