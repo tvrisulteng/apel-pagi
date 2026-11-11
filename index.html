@@ -151,7 +151,7 @@
     // ==========================================
     // KUNCI API RAHASIA (GANTI DENGAN WEB APP URL ANDA)
     // ==========================================
-    const API_URL = 'https://script.google.com/macros/s/AKfycbyIL1BepXKQC8JjG0utMNQ3CmMAEhjZdFVG8jdqvB8XYCWVsF4TLnheVCM0jLDyxDl4/exec';
+    const API_URL = 'https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnSI6riMCW41xFiX-68Pju3NkXLqBfWcJu34V9PkFVA9MCj1b9nUK9Jilawh7dxpJkmblkisov2uVLHjMs3TljbvX-Ss3wwiRl0AYiuvcs4p9u_gjM25YTnUMqrN-FKeupZcfiH9slerODNV5eBbwmuQgjQMQEfHmqqNGmzxSY7H3GrR8c88Xhu4A_hPJHTtue8ba7vIuGqqq0NZ8oDOJA8t4VmBxzsUvk0MsdwgY-7KjnN2PEFACzuGvHtWFgYa0Ri7ogNjYTmzD8lv3ilfogUTQhe48Q&lib=M-813rsu9OgvqqlTnuVWA6AXbKi2u7Wdi';
 
     // REGISTRASI SERVICE WORKER UNTUK PWA
     if ('serviceWorker' in navigator) {
@@ -164,7 +164,7 @@
 
     if (/WhatsApp/i.test(navigator.userAgent)) document.getElementById('waBanner').style.display = 'block';
 
-    const KANTOR_LAT = -0.886911, KANTOR_LNG = 119.863481, RADIUS_MAX = 1000; 
+    const KANTOR_LAT = -0.886911, KANTOR_LNG = 119.863481, RADIUS_MAX = 500; 
     let lat = null, lng = null, dataPegawaiServer = [], fotoBase64Akhir = null;
     let waktuClient = "", jarakPegawai = 9999;
     
